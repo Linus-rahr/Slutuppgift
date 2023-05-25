@@ -1,0 +1,132 @@
+/*Darkmode css kod*/
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+body{
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+.darkmode-button{
+    margin-left: 45%;
+    margin-top: .5rem;
+}
+/*Fixar positionering och färg av headern*/
+.header{
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+/*Fixar grejer på länkarna i headern*/
+.link{
+    text-decoration: none;
+    color: #777;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+/*Fixar grejer på knappen som öppnar drop down menyn*/
+.header-button{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #595959;
+    cursor: pointer;
+    font-size: 1.75em;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.header-button:hover{
+    color: #000;
+}
+
+.dropdown.active > .link,
+.link:hover{
+    color: blue;
+}
+
+.dropdown{
+    position: relative;
+
+}
+/*Fixar grejer på drop down menyn så som position av texten, färger, osv*/
+.dropdown-menu{
+    position: absolute;
+    left: 0.7rem;
+    top: calc(100% + 1.98rem);
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0, .1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    width: max-content;
+    color: black;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*Fixar grejer så att contenten i dropdown menyn positioneras rätt*/
+.dropdown-heading {
+    display: block;
+    width: max-content;
+}
+
+.dropdown.active > .dropdown-menu {
+    opacity: 1;
+}
+/*Fixar positionering på innehållet på sidan alltså text och bild*/
+.content{
+    min-height: 492px;
+    width: 100%;
+    margin-top: 4rem;
+    max-height: 600px;
+    display: flex;
+}
+/*Fixar grejer på bilden*/
+.ölkorv-picture {
+    width: 40%;
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+.ölkorv-picture > img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+}
+/*Fixar texten så den blir snygg och passar*/
+.ölkorv-text{
+    width: 30%;
+    height: fit-content;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    border: #5a5a5a solid 2.5px;
+    border-radius: 1%;
+}
+
+.semi-header{
+    margin-top: 4rem;
+}
+
+.ölkorv-header{
+    text-align: center;
+}
+
+.ölkorv-header2{
+    text-align: center;
+}
